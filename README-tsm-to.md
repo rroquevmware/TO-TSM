@@ -18,7 +18,7 @@ This guide documents the steps required to enable distributed tracing in TSM and
     --set wavefront.token=<api token> \  
     --set clusterName="<kubernetes cluster name>" \
     --set proxy.zipkinPort=9411 \
-    --set proxytraceZipkinApplicationName="<application name>" -n wavefront
+    --set proxy.traceZipkinApplicationName="<application name>" -n wavefront
     ```
 
 2. Enable distrubed tracing in TSM by editing the `istio` configmap in `istio-system` namespace and setting the paramter `enableTracing: true` 
