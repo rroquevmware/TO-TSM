@@ -9,7 +9,7 @@ This guide documents the steps required to enable distributed tracing in TSM and
 
     Add the helm repo
     ```shell
-    $ helm add repo wavefront https://wavefronthq.github.io/helm/
+    $ helm repo add wavefront https://wavefronthq.github.io/helm/
     ```
     Create a namespace called `wavefront` and deploy the wavefront helm chart to the `wavefront` namespace 
     ```shell
